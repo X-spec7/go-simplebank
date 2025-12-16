@@ -28,3 +28,7 @@ migrateup:
 
 migratedown:
 	migrate -path $(MIGRATION_PATH) -database "$(DB_URL)" --verbose down 1
+
+sqlc:
+	sqlc generate
+	
