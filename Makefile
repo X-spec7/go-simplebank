@@ -32,3 +32,5 @@ migratedown:
 sqlc:
 	sqlc generate
 	
+test:
+	go test -cover ./...
